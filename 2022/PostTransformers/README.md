@@ -14,10 +14,10 @@ The figure shows the interface of the developed visualization system. (a) provid
 ### Screenshots
 -----------
 <div>
-  <a target="_blank" rel="noopener noreferrer" href="https://seongmin-mun.github.io/VisualSystem/Major/PostTransformers/index.html"><img src="./images/PostTransformers.png" style="max-width:100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="https://seongmin-mun.github.io/Visualization/2022/PostTransformers/index.html"><img src="./images/PostTransformers.png" style="max-width:100%;"></a>
 </div>
 
-- [Try to use PostTransformers](https://seongmin-mun.github.io/VisualSystem/Major/PostTransformers/index.html)
+- [Try to use PostTransformers](https://seongmin-mun.github.io/Visualization/2022/PostTransformers/index.html)
 
 ### Skills
 -------
