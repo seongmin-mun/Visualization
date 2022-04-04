@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     var imgs = LeftsvgSection.append("image")
         .attr("class", "PNG")
-        .attr("xlink:href", "https://seongmin-mun.github.io/VisualSystem/Major/PostTransformers/densities/OutBERT/Ey_tSNE_trial_1_epoch_1.png")
+        .attr("xlink:href", "https://seongmin-mun.github.io/Visualization/2022/PostTransformers/densities/OutBERT/Ey_tSNE_trial_1_epoch_1.png")
         .attr("x", LeftsectionWidth*0.05)
         .attr("y", 0)
         .attr('width', LeftsectionWidth*0.9)
@@ -1293,7 +1293,7 @@ $(document).ready(function () {
 
             var imgs = LeftsvgSection.append("image")
                 .attr("class", "PNG")
-                .attr("xlink:href", "https://seongmin-mun.github.io/VisualSystem/Major/PostTransformers/densities/Out"+currentModel+"/"+currentPost+"_tSNE_trial_1_epoch_"+EpochNow+".png")
+                .attr("xlink:href", "https://seongmin-mun.github.io/Visualization/2022/PostTransformers/densities/Out"+currentModel+"/"+currentPost+"_tSNE_trial_1_epoch_"+EpochNow+".png")
                 .attr("x", LeftsectionWidth*0.05)
                 .attr("y", 0)
                 .attr('width', LeftsectionWidth*0.9)
