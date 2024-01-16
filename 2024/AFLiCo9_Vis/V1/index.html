@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Seongmin </title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        #allSection {
+            width: 1700px;
+            height: 950px;
+            position:relative;
+            float:left;
+        }
+
+        #header{
+            position:relative;
+            width:100%;
+            height:50px;
+            background-color:#7AB1D8;
+            background-clip: content-box;
+        }
+
+        #left {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:15%;
+            height:880px;
+            padding: 0.5%;
+            background-color:whitesmoke;
+            background-clip: content-box;
+        }
+
+
+
+        #section {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:40%;
+            height:880px;
+            padding: 0.5%;
+            background-clip: content-box;
+        }
+
+        #section_top {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:100%;
+            height:760px;
+            padding-right: : 0.5%;
+            padding-top: 0.5%;
+            padding-left: 0.5%;
+            background-clip: content-box;
+        }
+
+        #section_bottom {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:100%;
+            height:120px;
+            padding-right: : 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0.5%;
+            background-clip: content-box;
+        }
+
+        #section_bottom_left {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:12%;
+            height:80px;
+            padding-right: : 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0.5%;
+            background-clip: content-box;
+        }
+
+        #section_bottom_right {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:87%;
+            height:80px;
+            padding-right: : 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 0.5%;
+            background-clip: content-box;
+        }
+
+        #right {
+            position:relative;
+            float:right;
+            overflow:hidden;
+            width:42%;
+            height:880px;
+            padding: 0.5%;
+            background-color:whitesmoke;
+            background-clip: content-box;
+        }
+
+        #right_top {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:100%;
+            height:290px;
+            padding: 0.5%;
+            background-clip: content-box;
+        }
+
+
+        #right_middle {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:100%;
+            height:290px;
+            padding: 0.5%;
+            background-clip: content-box;
+        }
+
+
+        #right_bottom {
+            position:relative;
+            float:left;
+            overflow:hidden;
+            width:100%;
+            height:280px;
+            padding: 0.5%;
+            background-clip: content-box;
+        }
+
+        #header_left{
+            float:left;
+            width:49%;
+            height:50px;
+            padding-top: 0.1%;
+            background-clip: content-box;
+        }
+
+        #header_right{
+            float:right;
+            width:49%;
+            height:50px;
+            padding-top: 0.1%;
+            background-clip: content-box;
+        }
+
+        #footer {
+            height:20px;
+            width:100%;
+            text-align: center;
+            color: white;
+            background-color:#717171;
+            clear:both;
+        }
+
+
+        p#left_p {
+            text-align: left;
+            font-family: Open Sans;
+            font-size: 1.5em;
+            color: #666666;
+            font-weight: bold;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            padding-left: 5%;
+            margin: 0;
+        }
+
+        p#right_p {
+            text-align: left;
+            font-family: Open Sans;
+            font-size: 1.6em;
+            color: #666666;
+            font-weight: bold;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 5%;
+            margin: 0;
+        }
+
+        p#section_top_p {
+            font-family: Open Sans;
+            font-size: 1.5em;
+            color: #666666;
+            font-weight: bold;
+            padding-left: 1%;
+            margin: 0;
+        }
+
+        p#section_bottom_p {
+            font-family: Open Sans;
+            font-size: 1.5em;
+            color: #666666;
+            font-weight: bold;
+            padding-left: 1%;
+            margin: 0;
+        }
+
+        p#header_p_left {
+            position: relative;
+            text-align: left;
+            font-family: Open Sans;
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-left: 1%;
+            margin: 0;
+        }
+
+        p#header_p_right {
+            position: relative;
+            text-align: right;
+            font-family: Open Sans;
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-right: 2%;
+            margin: 0;
+        }
+
+        p#footer_p{
+            font-size: 1em;
+        }
+
+        a#header_a{
+            font-family: Open Sans;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        a#footer_a{
+            font-family: Open Sans;
+            color: #7AB1D8;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+
+
+
+        #container_leftbottom {
+            border:2px solid #ccc;
+            width:88%;
+            height: 715px;
+            position: absolute;
+            left: 5%;
+            overflow-y: scroll;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .CB_leftbottom {
+            cursor: pointer;
+            position: relative;
+            font-size: 14px;
+            left:5%;
+        }
+
+        #container_righttop {
+            border:2px solid #ccc;
+            width:88%;
+            height: 225px;
+            position: absolute;
+            left: 5%;
+            overflow-y: scroll;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-radius: 10px;
+            background: white;
+        }
+
+        #container_rightmiddle {
+            border:2px solid #ccc;
+            width:88%;
+            height: 225px;
+            position: absolute;
+            left: 5%;
+            overflow-y: scroll;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-radius: 10px;
+            background: white;
+        }
+
+        #container_rightbottom {
+            border:2px solid #ccc;
+            width:88%;
+            height: 210px;
+            position: absolute;
+            left: 5%;
+            overflow-y: scroll;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-radius: 10px;
+            background: white;
+        }
+
+        /* slider */
+        #play-button {
+          position: absolute;
+          top: 25px;
+          left: 20px;
+          background: #f08080;
+          padding-right: 26px;
+          border-radius: 3px;
+          border: none;
+          color: white;
+          margin: 0;
+          padding: 0 12px;
+          width: 60px;
+          cursor: pointer;
+          height: 30px;
+        }
+
+        #play-button:hover {
+          background-color: #696969;
+        }
+
+        .ticks {
+          font-size: 10px;
+        }
+
+        .track,
+        .track-inset,
+        .track-overlay {
+          stroke-linecap: round;
+        }
+
+        .track {
+          stroke: #000;
+          stroke-opacity: 0.3;
+          stroke-width: 10px;
+        }
+
+        .track-inset {
+          stroke: #dcdcdc;
+          stroke-width: 8px;
+        }
+
+        .track-overlay {
+          pointer-events: stroke;
+          stroke-width: 50px;
+          stroke: transparent;
+          cursor: pointer;
+        }
+
+        .handle {
+          fill: #fff;
+          stroke: #000;
+          stroke-opacity: 0.5;
+          stroke-width: 1.25px;
+        }
+
+        div.currentYear {
+            position: absolute;
+            text-align: right;
+            padding: 5px;
+            font-size: 40px;
+            background-color: white;
+            border: solid 1px white;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+
+
+    </style>
+    <script src="./js/d3.v4.js" charset="utf-8"></script>
+    <script src="./js/jquery-1.12.0.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  </head>
+
+  <body>
+    <div id="allSection">
+      <div id="header">
+          <div id="header_left">
+              <p id="header_p_left" align="left">AFLiCo9 Visualization</p>
+          </div>
+          <div id="header_right" align="right">
+              <p id="header_p_right"><a id="header_a" href="">GitHub</a></p>
+          </div>
+      </div>
+      <div id="left">
+            <p id="left_p">Select species</p>
+            <div id="select_species_div" style="padding-left:5%; padding-top:2%; padding-bottom:2%;">
+            <select id="select_species" class="select_l1" style="width: 90%; height: 30px; font-size: 17px; border-radius: 3px; position: relative; left:5%; background: white; cursor: pointer;"></select>
+            </div>
+
+            <p id="left_p">Select family</p>
+            <div id="select_family_div" style="padding-left:5%; padding-top:2%; padding-bottom:2%;">
+            <select id="select_family" class="select_l2" style="width: 90%; height: 30px; font-size: 17px; border-radius: 3px; position: relative; left:5%; background: white; cursor: pointer;"></select>
+            </div>
+
+            <p id="left_p">Select genus</p>
+            <div id="select_genus_div" style="padding-left:5%; padding-top:2%; padding-bottom:2%;">
+            <select id="select_genus" class="select_l3" style="width: 90%; height: 30px; font-size: 17px; border-radius: 3px; position: relative; left:5%; background: white; cursor: pointer;"></select>
+            </div>
+
+            <p id="left_p">Select epithet</p>
+            <div id="select_epithet_div" style="padding-left:5%; padding-top:2%; padding-bottom:2%;">
+            <select id="select_epithet" class="select_l4" style="width: 90%; height: 30px; font-size: 17px; border-radius: 3px; position: relative; left:5%; background: white; cursor: pointer;"></select>
+            </div>
+
+      </div>
+      <div id="section">
+          <div id="section_top">
+              <p id="section_top_p">Distributional semantic map with t-SNE</p>
+          </div>
+          <div id="section_bottom">
+              <p id="section_bottom_p">Current year</p>
+              <div id="section_bottom_left">
+                  <button id="play-button">Play</button>
+              </div>
+              <div id="section_bottom_right">
+              </div>
+          </div>
+      </div>
+      <div id="right">
+          <div id="right_top">
+              <p id="right_p">Zipf's law graph</p>
+              <div id="container_righttop">
+              </div>
+          </div>
+          <div id="right_middle">
+              <p id="right_p">Frequency bar charts</p>
+              <div id="container_rightmiddle">
+              </div>
+          </div>
+          <div id="right_bottom">
+              <p id="right_p">Concordance table</p>
+              <div id="container_rightbottom">
+              </div>
+          </div>
+      </div>
+
+      <div id="footer">
+          <p id="footer_p">© 2024, Developer: <a id="footer_a" href="http://seongminmun.org/">Seongmin Mun</a>. All rights reserved. <p>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+
+      $(document).ready(function () {
+
+        speciesList = ["ORTHOPTERA","GENTIANALES","PERCIFORMES"]
+
+        for(var i = 0 ; i < speciesList.length; i++){
+            $( "#select_species" ).append("<option value='"+speciesList[i]+"'>"+speciesList[i]+"</option>");
+        }
+
+        familyList = ["PAMPHAGIDAE","RUBIACEAE","CICHLIDAE"]
+
+        for(var i = 0 ; i < familyList.length; i++){
+            $( "#select_family" ).append("<option value='"+familyList[i]+"'>"+familyList[i]+"</option>");
+        }
+
+        genusList = ["Prionotropis","Timonius","Rhamphochromis"]
+
+        for(var i = 0 ; i < genusList.length; i++){
+            $( "#select_genus" ).append("<option value='"+genusList[i]+"'>"+genusList[i]+"</option>");
+        }
+
+        epithetList = ["flexuosa","oblongus","esox"]
+
+        for(var i = 0 ; i < epithetList.length; i++){
+            $( "#select_epithet" ).append("<option value='"+epithetList[i]+"'>"+epithetList[i]+"</option>");
+        }
+
+        $('.select_l1').select2();
+        $('.select_l2').select2();
+        $('.select_l3').select2();
+        $('.select_l4').select2();
+
+        var Years = ['1810','1820','1830','1840','1850','1860','1870','1880','1890','1900','1910','1920','1930','1940','1950','1960','1970','1980','1990','2000']
+
+        // 지도 네트워크 시각화를 위한 SVG생성
+        var sectionWidth = $("#section_top").width()   //윈도우 넓이
+        var sectionHeight = $("#section_top").height()   //윈도우 높이
+
+
+        var svgSection = d3.select('#section_top').append('svg')
+              .attr('width', sectionWidth)
+              .attr('height', (sectionHeight*0.935))
+              .call(d3.zoom().scaleExtent([0.5, 5]).on("zoom", function () {
+                svgSection.attr("transform", d3.event.transform)
+              }))
+              .append("g");
+
+          var div_currentYear = d3.select("#section").append("div")
+                .attr("class", "currentYear")
+                .style("opacity", 0.8)
+                .style("right", sectionWidth*0.03+"px")
+                .style("top", sectionHeight*0.01+"px");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // slider
+        var SB_width = $("#section_bottom_right").width()   //윈도우 넓이
+        var SB_height = $("#section_bottom_right").height()
+
+        var SB_svg = d3.select("#section_bottom_right")
+          .append("svg")
+          .attr("width", SB_width)
+          .attr("height", SB_height);
+
+
+        console.log(Years.length);
+
+        ////////// slider //////////
+
+        var target = actual = 0;
+        var alpha = 0.2;
+        var timer = d3.timer(updateSlider);
+        var stepTimer;
+        var moving = false;
+        var maxValue = Years.length - 1;
+        var trailLength = 10;
+        var currentStep = 0;
+
+        var playButton = d3.select("#play-button");
+
+        var x = d3.scaleLinear()
+            .domain([0, (Years.length - 1)])
+            .range([0, SB_width*0.9])
+            .clamp(true);
+
+        var slider = SB_svg.append("g")
+            .attr("class", "slider")
+            .attr("transform", "translate(" + SB_width*0.05 + "," + SB_height/2 + ")");
+
+        slider.append("line")
+            .attr("class", "track")
+            .attr("x1", x.range()[0])
+            .attr("x2", x.range()[1])
+            .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+            .attr("class", "track-inset")
+            .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+            .attr("class", "track-overlay")
+            .call(d3.drag()
+                .on("start.interrupt", function() { slider.interrupt();})
+                .on("start drag", function() {
+                  currentValue = d3.event.x;
+                  update(x.invert(currentValue));
+                })
+                .on("end drag", function() { drawall();})
+            );
+
+        slider.insert("g", ".track-overlay")
+            .attr("class", "ticks")
+            .attr("transform", "translate(0," + 18 + ")")
+            .selectAll("text")
+            .data(x.ticks(21))
+            .enter().append("text")
+            .attr("x", x)
+            .attr("text-anchor", "middle")
+            .text(d => Years[d]);
+
+        const handle = slider.insert("circle", ".track-overlay")
+            .attr("class", "handle")
+            .attr("r", 9);
+
+        d3.select(window)
+            .on("keydown", keydowned);
+
+        playButton
+            .on("click", paused)
+            .each(paused);
+
+        function update(d) {
+          target = d;
+          moving = true;
+          timer.restart(updateSlider);
+          drawall();
+        }
+
+        // console.log($(".handle cx").val());
+
+        // var firstHandleCX = 0
+
+
+
+        function updateSlider() {
+          let diff = target - actual;
+          if (Math.abs(diff) < 1e-3) actual = target, timer.stop();
+          else actual += diff * alpha;
+          handle.attr("cx", x(actual));
+          currentStep = Math.round(actual)
+
+          console.log(Years[currentStep])
+
+          return currentStep
+
+        }
+
+        function keydowned() {
+          let currentValue = actual;
+          if (d3.event.metaKey || d3.event.altKey) return;
+          switch (d3.event.keyCode) {
+            case 37: currentValue = Math.max(x.domain()[0], actual - trailLength); break;
+            case 39: currentValue = Math.min(x.domain()[1], actual + trailLength); break;
+            default: return;
+          }
+          update(currentValue);
+          paused();
+        }
+
+
+        function paused() {
+          if (moving) {
+            slider.interrupt();
+            clearInterval(stepTimer);
+            moving = false;
+            playButton.text("Play");
+          } else {
+            if (actual > maxValue) actual = 0;
+            stepTimer = setInterval(step, 1500);
+            moving = true;
+            playButton.text("Pause");
+          }
+        }
+
+        function step() {
+          if (actual > maxValue) {
+            paused();
+          } else {
+            update(actual + trailLength / 10);
+          }
+        }
+
+        paused();
+
+        // d3.selectAll(".handle").on("change", drawall);
+
+        // d3.selectAll(".handle.cx").on("onchange", drawall);
+
+
+
+        firstdrawdata();
+
+
+        // if(firstHandleCX!=cxValue){
+        //   drawall();
+        //   firstHandleCX = cxValue;
+        // }
+
+        // d3.selectAll("#op_node_color").on("change", drawall);
+
+        d3.selectAll("#op_measure").on("change", drawall);
+        d3.selectAll("#container_leftbottom").on("change", drawall);
+
+
+        //모든 함수 가동부분
+        function drawall(){
+
+            var selected_measure = $("#op_measure").val();
+            // var selected_node_color = $( "#op_node_color" ).val();
+            // var selected_node_color = $( "#op_node_color" ).val();
+
+            // var origins = origincheckbox();
+            // changedrawdata(selected_postposition,selected_node_color,functions,indexs)
+            changedrawdata(selected_measure)
+
+        }
+
+
+
+
+
+        // 시각화 처음 생성 (초기 화면)
+        function firstdrawdata() {
+          var textlabel = div_currentYear.append("text")
+                  .attr("class", "textlabel")
+                  .attr("text-anchor", "middle")
+                  .text(Years[0])
+                  .attr("text-anchor", "end")
+                  .attr("font-family", "Open Sans")
+                  .attr("font-size", "25px")
+                  .attr("fill", "#C2C1C1")
+        }
+
+
+
+
+        // 시각화 변경
+        function changedrawdata(selected_measure) {
+
+          console.log(selected_measure);
+
+          if ($("#play-button").text()=="Pause"){
+            YearNow = Years[updateSlider()+1]
+          } else {
+            YearNow = Years[updateSlider()]
+          }
+
+
+          var textlabel = div_currentYear.selectAll(".textlabel")
+            textlabel.enter()
+                     .append("text")
+                     .attr("class", "label")
+                     .text(YearNow)
+            textlabel.transition()
+                     .duration(10)
+                     .text(YearNow)
+            textlabel.exit().remove();
+        }
+
+
+
+      })
+    </script>
+  </body>
+
+
+</html>
